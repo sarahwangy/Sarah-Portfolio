@@ -1,7 +1,12 @@
+"use client";
+
 import { SectionNav } from "./SectionNav";
 import { SocialLinks } from "./SocialLinks";
+import { useLang } from "./LanguageProvider";
 
 export function Sidebar() {
+  const { t } = useLang();
+
   return (
     <header className="pt-16 pb-8 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-between lg:py-24">
       <div>
@@ -9,10 +14,10 @@ export function Sidebar() {
           Sarah Wang
         </h1>
         <h2 className="mt-3 text-xl font-medium text-brand-text">
-          Full Stack Engineer
+          {t.sidebar.title}
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-brand-text-muted">
-          I build warm, useful AI-powered personal tools.
+          {t.sidebar.tagline}
         </p>
         <SectionNav />
       </div>

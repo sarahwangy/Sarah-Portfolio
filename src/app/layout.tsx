@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/components/LanguageProvider";
+import { LangToggle } from "@/components/LangToggle";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,7 +40,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <LanguageProvider>
+          <LangToggle />
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   );
 }

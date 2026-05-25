@@ -1,16 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const sections = [
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "blog", label: "Blog" },
-];
+import { useLang } from "./LanguageProvider";
 
 export function SectionNav() {
   const [active, setActive] = useState("about");
+  const { t } = useLang();
+
+  const sections = [
+    { id: "about", label: t.nav.about },
+    { id: "experience", label: t.nav.experience },
+    { id: "projects", label: t.nav.projects },
+    { id: "blog", label: t.nav.blog },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,9 +47,7 @@ export function SectionNav() {
             >
               <span
                 className={`mr-4 h-px bg-current transition-all duration-300 ${
-                  active === id
-                    ? "w-16"
-                    : "w-8 group-hover:w-16"
+                  active === id ? "w-16" : "w-8 group-hover:w-16"
                 }`}
               />
               {label}
