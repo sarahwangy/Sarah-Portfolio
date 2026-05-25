@@ -1,8 +1,9 @@
-import { GitFork, Mail, Briefcase, X } from "lucide-react";
+import { GitFork, Mail, Briefcase, X, BookOpen } from "lucide-react";
 
 const links = [
   { href: process.env.NEXT_PUBLIC_GITHUB_URL!, label: "GitHub", Icon: GitFork },
   { href: process.env.NEXT_PUBLIC_LINKEDIN_URL!, label: "LinkedIn", Icon: Briefcase },
+  { href: process.env.NEXT_PUBLIC_MEDIUM_URL!, label: "Medium", Icon: BookOpen },
   { href: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`, label: "Email", Icon: Mail },
   { href: process.env.NEXT_PUBLIC_TWITTER_URL!, label: "X / Twitter", Icon: X },
 ];
