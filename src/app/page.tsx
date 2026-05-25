@@ -17,7 +17,7 @@ export default function Home() {
     <div className="mx-auto min-h-screen max-w-7xl px-6 md:px-12 lg:px-24">
       <div className="lg:flex lg:gap-4">
         <Sidebar />
-        <main className="pt-24 lg:w-1/2 lg:py-24">
+        <main className="pb-24 lg:w-1/2 lg:py-24">
           <section id="about" className="mb-20 scroll-mt-16">
             <SectionHeading>About</SectionHeading>
             <About />
