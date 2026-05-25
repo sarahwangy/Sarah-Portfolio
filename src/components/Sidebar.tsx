@@ -3,7 +3,7 @@ import { SocialLinks } from "./SocialLinks";
 
 export function Sidebar() {
   return (
-    <header className="pt-16 pb-8 lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 lg:pb-24">
+    <header className="pt-16 pb-8 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-brand-text sm:text-5xl">
           Sarah Wang
