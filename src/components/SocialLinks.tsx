@@ -1,10 +1,10 @@
 import { GitFork, Mail, Briefcase, X } from "lucide-react";
 
 const links = [
-  { href: "https://github.com/sarahwangy", label: "GitHub", Icon: GitFork },
-  { href: "https://linkedin.com/in/sarahwangy", label: "LinkedIn", Icon: Briefcase },
-  { href: "mailto:sarahwangdk@gmail.com", label: "Email", Icon: Mail },
-  { href: "https://x.com/sarahwangy", label: "X / Twitter", Icon: X },
+  { href: process.env.NEXT_PUBLIC_GITHUB_URL!, label: "GitHub", Icon: GitFork },
+  { href: process.env.NEXT_PUBLIC_LINKEDIN_URL!, label: "LinkedIn", Icon: Briefcase },
+  { href: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`, label: "Email", Icon: Mail },
+  { href: process.env.NEXT_PUBLIC_TWITTER_URL!, label: "X / Twitter", Icon: X },
 ];
 
 export function SocialLinks() {
