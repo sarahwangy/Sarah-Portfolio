@@ -1,6 +1,9 @@
+import { SectionNav } from "./SectionNav";
+import { SocialLinks } from "./SocialLinks";
+
 export function Sidebar() {
   return (
-    <aside className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+    <header className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-brand-text sm:text-5xl">
           Sarah Wang
@@ -11,7 +14,9 @@ export function Sidebar() {
         <p className="mt-4 max-w-xs leading-normal text-brand-text-muted">
           I build warm, useful AI-powered personal tools.
         </p>
+        <SectionNav />
       </div>
-    </aside>
+      <SocialLinks />
+    </header>
   );
 }
