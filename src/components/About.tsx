@@ -29,7 +29,7 @@ export function About() {
       </p>
       <p>
         Right now I&apos;m building{" "}
-        <InlineLink href="https://love-my-shelf.vercel.app">
+        <InlineLink href="https://lovely-shelf.vercel.app">
           Love My Shelf
         </InlineLink>
         , a personal tool that lets you photograph a book cover and have it

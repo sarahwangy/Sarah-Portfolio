@@ -13,7 +13,7 @@ export const projects: Project[] = [
     name: "lovely-shelf",
     description:
       "Photograph a book cover and AI instantly recognizes title, author, and genre — catalogued to Notion in seconds. Includes a stats dashboard (genre breakdown, reading heatmap, author countries), a chat interface for asking questions about your shelf, and a quotes collection. Built for my own overflowing library; compresses a 5-minute workflow to 5 seconds.",
-    url: "https://love-my-shelf.vercel.app",
+    url: "https://lovely-shelf.vercel.app",
     repoUrl: "https://github.com/sarahwangy/love-my-shelf",
     tags: ["Next.js", "Anthropic", "Notion", "Tailwind", "Vercel"],
     image: "/images/projects/love-my-shelf.png",
