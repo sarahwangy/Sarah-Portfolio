@@ -14,7 +14,7 @@ export const projects: Project[] = [
     description:
       "Photograph a book cover and AI instantly recognizes title, author, and genre — catalogued to Notion in seconds. Includes a stats dashboard (genre breakdown, reading heatmap, author countries), a chat interface for asking questions about your shelf, and a quotes collection. Built for my own overflowing library; compresses a 5-minute workflow to 5 seconds.",
     url: "https://lovely-shelf.vercel.app",
-    repoUrl: "https://github.com/sarahwangy/love-my-shelf",
+    repoUrl: process.env.NEXT_PUBLIC_LOVELY_SHELF_REPO,
     tags: ["Next.js", "Anthropic", "Notion", "Tailwind", "Vercel"],
     image: "/images/projects/love-my-shelf.png",
     status: "live",

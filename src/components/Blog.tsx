@@ -45,7 +45,7 @@ export function Blog() {
       </div>
 
       <a
-        href="https://medium.com/@sarahwang9"
+        href={process.env.NEXT_PUBLIC_MEDIUM_URL!}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 text-sm font-medium text-brand-accent transition-colors hover:text-brand-text"
