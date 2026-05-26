@@ -30,6 +30,9 @@
 # brainstorming sessions
 /.superpowers
 
+# firecrawl scrape results
+firecrawl-*.md
+
 # debug
 npm-debug.log*
 yarn-debug.log*
